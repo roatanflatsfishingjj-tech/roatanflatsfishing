@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Roatan Flats Fishing JJ</title>
+<meta name="description" content="Learn about Roatan Flats Fishing JJ, a local guided fishing experience built on generations of knowledge in the flats and mangroves of Roatan.">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="../Assets/OfficialLogo.jpeg">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#005461',
+                        teal: '#018790',
+                        aqua: '#00B7B5',
+                        mist: '#F4F4F4',
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #F4F4F4;
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .glass-nav {
+            background: rgba(0, 84, 97, 0.90);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .hover-lift {
+            transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.5s ease;
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px -5px rgba(0, 84, 97, 0.15);
+        }
+
+        .video-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F4F4F4;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #018790;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #005461;
+        }
+    </style>
+</head>
+
+<body class="text-navy antialiased selection:bg-aqua selection:text-white">
+
+<nav id="main-nav" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 border-b border-transparent py-6">
+    <div class="container mx-auto px-6 md:px-12 flex justify-between items-center">
+
+        <a href="../index.html" class="flex items-center gap-3 group z-50 relative">
+            <div class="w-12 h-12 rounded-full p-[2px] bg-gradient-to-tr from-teal-400 to-cyan-400 shadow-lg group-hover:scale-105 transition-transform duration-300">
+                <div class="w-full h-full bg-slate-900 rounded-full flex items-center justify-center overflow-hidden">
+                    <img src="../Assets/OfficialLogo.jpeg" alt="Roatan Flats Fishing Logo" class="w-full h-full object-cover">
+                </div>
+            </div>
+            <div class="text-white drop-shadow-md">
+                <span class="block font-serif font-bold text-lg md:text-xl tracking-wide leading-tight">
+                    Roatan Flats Fishing JJ
+                </span>
+                <span class="block text-xs font-sans text-cyan-400 tracking-widest uppercase">
+                </span>
+            </div>
+        </a>
+
+        <div class="hidden lg:flex items-center gap-1 bg-slate-900/50 backdrop-blur-md px-2 py-1.5 rounded-full border border-white/10 shadow-2xl">
+            <a href="../index.html" class="px-5 py-2 text-sm font-medium text-slate-200 rounded-full hover:bg-white/10 hover:text-white transition-all">Home</a>
+            <a href="../About/index.html" class="px-5 py-2 text-sm font-medium text-slate-200 rounded-full hover:bg-white/10 hover:text-white transition-all">About Us</a>
+            <a href="../Moments/index.html" class="px-5 py-2 text-sm font-medium text-slate-200 rounded-full hover:bg-white/10 hover:text-white transition-all">Moments</a>
+            <a href="../About/index.html#accommodations" class="px-5 py-2 text-sm font-medium text-slate-200 rounded-full hover:bg-white/10 hover:text-white transition-all">Accommodations</a>
+            <a href="../Rates/index.html" class="px-5 py-2 text-sm font-medium text-slate-200 rounded-full hover:bg-white/10 hover:text-white transition-all">Rates</a>
+        </div>
+
+        <div class="flex items-center gap-4">
+            <a href="../Contact/index.html" class="hidden md:block group relative z-50">
+                <div class="absolute -inset-0.5 bg-gradient-to-r from-teal-400 to-cyan-400 rounded-full blur opacity-60 group-hover:opacity-100 transition duration-300"></div>
+                <button class="relative bg-white text-slate-900 px-6 py-2.5 rounded-full font-bold text-sm shadow-xl flex items-center gap-2 hover:bg-slate-50 transition-colors">
+                    Book Trip
+                    <i class="fa-solid fa-arrow-right text-teal-500 group-hover:translate-x-1 transition-transform"></i>
+                </button>
+            </a>
+
+            <button id="mobile-toggle" class="lg:hidden relative z-50 w-10 h-10 flex items-center justify-center text-white bg-slate-800/50 backdrop-blur-md rounded-full border border-white/10 active:scale-95 transition-all">
+                <i id="menu-icon" class="fa-solid fa-bars text-lg"></i>
+            </button>
+        </div>
+    </div>
+
+    <div id="mobile-menu" class="fixed top-0 left-0 w-full h-[100dvh] bg-slate-900/95 backdrop-blur-xl z-40 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-center items-center">
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="absolute top-[-10%] right-[-10%] w-64 h-64 bg-teal-500/20 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-[-10%] left-[-10%] w-64 h-64 bg-cyan-500/20 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="flex flex-col items-center gap-8 relative z-50">
+            <a href="../index.html" class="mobile-link text-3xl font-serif text-white hover:text-cyan-400 transition-colors">Home</a>
+            <a href="../About/index.html" class="mobile-link text-3xl font-serif text-white hover:text-cyan-400 transition-colors">About Us</a>
+            <a href="../Moments/index.html" class="mobile-link text-3xl font-serif text-white hover:text-cyan-400 transition-colors">Moments</a>
+            <a href="../About/index.html#accommodations" class="mobile-link text-3xl font-serif text-white hover:text-cyan-400 transition-colors">Accommodations</a>
+            <a href="../Rates/index.html" class="mobile-link text-3xl font-serif text-white hover:text-cyan-400 transition-colors">Packages & Rates</a>
+            <a href="../Contact/index.html"
+               class="mobile-link mt-4 px-8 py-3 bg-white text-blue-900 rounded-full font-extrabold text-xl shadow-lg hover:bg-slate-50 transition-colors inline-block">
+                Book Now
+            </a>
+        </div>
+    </div>
+</nav>
+
+<script>
+    const nav = document.getElementById('main-nav');
+    const toggleBtn = document.getElementById('mobile-toggle');
+    const menuIcon = document.getElementById('menu-icon');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    let isMenuOpen = false;
+
+    function handleScroll() {
+        if (window.scrollY > 10) {
+            nav.classList.add('bg-slate-900/90', 'backdrop-blur-lg', 'shadow-lg', 'py-3', 'border-white/5');
+            nav.classList.remove('py-6', 'border-transparent');
+        } else {
+            if (!isMenuOpen) {
+                nav.classList.remove('bg-slate-900/90', 'backdrop-blur-lg', 'shadow-lg', 'py-3', 'border-white/5');
+                nav.classList.add('py-6', 'border-transparent');
+            }
+        }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+
+    function toggleMenu() {
+        isMenuOpen = !isMenuOpen;
+
+        if (isMenuOpen) {
+            mobileMenu.classList.remove('translate-x-full');
+            menuIcon.classList.replace('fa-bars', 'fa-xmark');
+            document.body.style.overflow = 'hidden';
+
+            nav.classList.add('bg-slate-900', 'py-3');
+            nav.classList.remove('py-6', 'bg-transparent');
+        } else {
+            mobileMenu.classList.add('translate-x-full');
+            menuIcon.classList.replace('fa-xmark', 'fa-bars');
+            document.body.style.overflow = '';
+
+            if (window.scrollY <= 10) {
+                nav.classList.remove('bg-slate-900', 'py-3');
+                nav.classList.add('py-6');
+            } else {
+                nav.classList.remove('bg-slate-900');
+            }
+        }
+    }
+
+    toggleBtn.addEventListener('click', toggleMenu);
+
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', toggleMenu);
+    });
+</script>
+
+<header class="relative w-full h-[60vh] min-h-[500px] flex items-end justify-center overflow-hidden pb-32 group">
+    <div class="absolute inset-0 w-full h-full overflow-hidden">
+        <img src="../Assets/bgweb.jpg"
+             alt="Roatan Flats"
+             class="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-[20s] ease-linear lg:animate-slow-zoom">
+    </div>
+
+    <div class="absolute inset-0 bg-slate-900/40"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
+
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-teal-500/30 rounded-full blur-[100px] opacity-50 pointer-events-none"></div>
+
+    <div class="relative z-20 container mx-auto px-6 text-center mb-12">
+        <div class="animate-fade-up flex flex-col items-center">
+            <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 mb-6">
+                <span class="text-white/80 text-xs font-bold tracking-wider uppercase">Home</span>
+                <i class="fa-solid fa-chevron-right text-cyan-400 text-[10px]"></i>
+                <span class="text-cyan-400 text-xs font-bold tracking-wider uppercase">About Us</span>
+            </div>
+
+            <h1 class="text-6xl md:text-8xl lg:text-9xl font-serif font-black text-white mb-8 drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)] leading-none">
+                Our Story
+            </h1>
+
+            <div class="flex items-center gap-4">
+                <div class="h-px w-16 bg-gradient-to-l from-cyan-400 to-transparent"></div>
+                <i class="fa-solid fa-fish-fins text-cyan-400 text-2xl"></i>
+                <div class="h-px w-16 bg-gradient-to-r from-cyan-400 to-transparent"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-30">
+        <svg class="relative block w-[calc(130%+1.3px)] h-[100px] text-white" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="fill-current"></path>
+        </svg>
+    </div>
+</header>
+
+<style>
+    @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slowZoom {
+        0% { transform: scale(1); }
+        100% { transform: scale(1.15); }
+    }
+
+    .animate-fade-up {
+        animation: fadeUp 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+
+    @media (min-width: 1024px) {
+        .lg\:animate-slow-zoom {
+            animation: slowZoom 20s linear infinite alternate;
+        }
+    }
+</style>
+
+<main class="relative z-10 bg-white">
+    <section class="py-12 md:py-24 lg:py-32 overflow-hidden">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+                <div class="lg:w-1/2 order-2 lg:order-1" data-aos="fade-right">
+                    <h4 class="text-cyan-500 font-bold uppercase tracking-widest text-xs md:text-sm mb-2 md:mb-4">Born on the Water</h4>
+                    <h2 class="text-3xl md:text-5xl font-serif font-bold text-slate-900 mb-4 md:mb-6 leading-tight">
+                        More than just fishing.<br>
+                        It’s a <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-teal-600">Roatan Legacy.</span>
+                    </h2>
+                    <p class="text-slate-600 text-base md:text-lg leading-relaxed mb-4 md:mb-6">
+                        Welcome to Roatan Flats Fishing JJ. We are not just a charter service; we are a family of anglers born and raised in the mangroves and flats of Islas de la Bahía.
+                    </p>
+                    <p class="text-slate-600 text-base md:text-lg leading-relaxed mb-6 md:mb-8">
+                        We know where the Permit tail on the incoming tide, where the Bonefish school in the shadows, and where the resident Tarpon roll at sunrise. When you fish with JJ, you aren't just booking a boat; you are unlocking decades of local knowledge.
+                    </p>
+
+                    <div class="border-l-4 border-cyan-400 pl-4 py-2 bg-slate-50 rounded-r-lg">
+                        <p class="italic text-slate-700 font-medium text-sm md:text-base">"The difference between a good day and a legendary day is knowing the water like the back of your hand."</p>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2 relative order-1 lg:order-2 w-full">
+                    <div class="hidden lg:block absolute -right-20 -top-20 w-96 h-96 bg-cyan-100 rounded-full blur-3xl opacity-50 mix-blend-multiply"></div>
+
+                    <div class="grid grid-cols-2 gap-3 md:gap-4 relative z-10">
+                        <img src="../Assets/img16.jpeg" alt="Fly Fishing Cast" class="rounded-xl shadow-lg w-full h-40 md:h-64 object-cover">
+                        <img src="../Assets/img2.jpeg" alt="Roatan Water" class="rounded-xl shadow-lg w-full h-40 md:h-64 object-cover mt-4 md:mt-12">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-slate-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10" style="background-image: url('https://www.transparenttextures.com/patterns/cubes.png');"></div>
+
+        <div class="container mx-auto px-4 md:px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+                <div class="w-full lg:w-1/2 relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-tr from-cyan-400 to-teal-600 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
+
+                    <div class="relative overflow-hidden rounded-2xl aspect-video w-full">
+                        <img src="../Assets/joevy1.jpeg"
+                             alt="Captain Joevy"
+                             class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                </div>
+
+                <div class="w-full lg:w-1/2 text-center lg:text-left">
+                    <span class="text-cyan-400 font-bold tracking-widest uppercase text-xs mb-2 block">Your Guide</span>
+                    <h2 class="text-3xl md:text-5xl font-serif font-bold mb-6">Meet Captain Joevy</h2>
+
+                    <div class="h-1 w-24 bg-cyan-400 mx-auto lg:mx-0 rounded-full mb-8"></div>
+
+                    <p class="text-slate-300 text-lg leading-relaxed mb-6">
+                        With over 10 years navigating the East End flats, Captain Joevy specializes in the Grand Slam. His patience and eagle eyes are your best tool on the water.
+                    </p>
+                    <p class="text-slate-400 text-base leading-relaxed mb-8">
+                        Whether you are looking to land your first Bonefish or hunting for a trophy Tarpon, the Captain knows exactly how to position the boat against the wind and tide to give you the perfect shot.
+                    </p>
+
+                    <ul class="flex flex-wrap justify-center lg:justify-start gap-4 md:gap-6 text-sm font-bold text-slate-200">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Roatan Native</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> 10+ Years Exp.</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Expert</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 md:py-24 bg-slate-50">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-10 md:mb-16 gap-4">
+                <div class="max-w-2xl">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-2 md:mb-4">Chasing the Grand Slam</h2>
+                    <p class="text-slate-600 text-sm md:text-lg">Roatan offers a diverse fishery. We target the "Big Three."</p>
+                </div>
+                <a href="../Rates/index.html" class="hidden md:inline-flex items-center gap-2 text-cyan-600 font-bold hover:text-cyan-700 transition-colors">
+                    View Our Rates <i class="fa-solid fa-arrow-right transform group-hover:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl transition-shadow duration-300 flex md:block items-center gap-4 md:gap-0">
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-cyan-100 rounded-full flex items-center justify-center md:mb-6 text-cyan-600 shrink-0">
+                        <i class="fa-solid fa-fish text-xl md:text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl md:text-2xl font-serif font-bold text-slate-900 mb-1 md:mb-3">Permit</h3>
+                        <p class="text-slate-600 text-sm md:text-base">The Holy Grail. Famous for tailing Permit on turtle grass flats.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl transition-shadow duration-300 flex md:block items-center gap-4 md:gap-0">
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-teal-100 rounded-full flex items-center justify-center md:mb-6 text-teal-600 shrink-0">
+                        <i class="fa-solid fa-water text-xl md:text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl md:text-2xl font-serif font-bold text-slate-900 mb-1 md:mb-3">Bonefish</h3>
+                        <p class="text-slate-600 text-sm md:text-base">Fast and plentiful. Perfect for warming up your casting arm.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl transition-shadow duration-300 flex md:block items-center gap-4 md:gap-0">
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-blue-100 rounded-full flex items-center justify-center md:mb-6 text-blue-600 shrink-0">
+                        <i class="fa-solid fa-anchor text-xl md:text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl md:text-2xl font-serif font-bold text-slate-900 mb-1 md:mb-3">Tarpon</h3>
+                        <p class="text-slate-600 text-sm md:text-base">The Silver King. Found in the channels and mangroves.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 text-center md:hidden">
+                <a href="../Rates/index.html" class="inline-flex items-center gap-2 text-cyan-600 font-bold hover:text-cyan-700">
+                    View Our Rates <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="accommodations" class="py-24 bg-slate-50 font-sans">
+        <div class="container mx-auto px-4 md:px-6 max-w-6xl">
+            <div class="mb-10">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-[#005461] mb-4">The Roatan Flats Fishing JJ Lodge</h2>
+                <p class="text-lg text-slate-500 max-w-3xl">After years of operating on these flats, we built the ultimate stress-free basecamp. Owned directly by Roatan Flats Fishing JJ, there is no running up and down to different hotels just pure fishing, amazing flats views, and the best sunsets in the evening.</p>
+            </div>
+
+            <div class="relative w-full h-[50vh] md:h-[65vh] rounded-[2rem] overflow-hidden shadow-2xl mb-12 group bg-slate-200">
+                <img id="main-gallery-img" src="../Assets/lodge4.jpeg" class="w-full h-full object-cover transition-transform duration-700" alt="Lodge Main">
+
+                <button onclick="prevImage()" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-[#005461] p-3 rounded-full backdrop-blur-sm shadow-lg transition-all">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                </button>
+                <button onclick="nextImage()" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-[#005461] p-3 rounded-full backdrop-blur-sm shadow-lg transition-all">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </button>
+
+                <div class="hidden md:flex absolute bottom-6 left-1/2 -translate-x-1/2 gap-3 bg-white/20 p-2 rounded-2xl backdrop-blur-md">
+                    <img onclick="setImg(0)" src="../Assets/lodge1.jpeg" class="w-16 h-12 object-cover rounded-lg cursor-pointer hover:ring-2 ring-[#00B7B5]">
+                    <img onclick="setImg(1)" src="../Assets/lodge3.jpeg" class="w-16 h-12 object-cover rounded-lg cursor-pointer hover:ring-2 ring-[#00B7B5]">
+                    <img onclick="setImg(2)" src="../Assets/lodge2.jpeg" class="w-16 h-12 object-cover rounded-lg cursor-pointer hover:ring-2 ring-[#00B7B5]">
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-12">
+                <div class="lg:col-span-2">
+                    <h3 class="text-2xl font-bold text-[#005461] mb-2">Entire Home hosted by Roatan Flats Fishing</h3>
+                    <p class="text-slate-500 mb-8 pb-8 border-b border-slate-200">2 bedrooms • 2 queen beds • 1 bathroom • Full Kitchen & Living Room</p>
+
+                    <h4 class="text-xl font-bold text-[#005461] mb-4">About the space</h4>
+                    <p class="text-slate-600 leading-relaxed mb-6">
+                        Designed with an open-concept layout, our lodge seamlessly blends the fully furnished living room and kitchen, creating a spacious environment to unwind after a long day of casting.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed pb-8 border-b border-slate-200">
+                        You will enjoy dual perspectives of the Caribbean with front and back views of the ocean. It's an incredibly secure property, directly accessible by both boat and car, ensuring your logistics are as smooth as the water on a calm morning.
+                    </p>
+
+                    <h4 class="text-xl font-bold text-[#005461] my-6">What this place offers</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-4 mb-8">
+                        <div class="flex items-center gap-4 text-slate-600">
+                            <svg class="w-7 h-7 text-[#00B7B5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"></path></svg>
+                            <span class="font-medium">Fast, Reliable WiFi</span>
+                        </div>
+
+                        <div class="flex items-center gap-4 text-slate-600">
+                            <svg class="w-7 h-7 text-[#00B7B5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"></path></svg>
+                            <span class="font-medium">Fully Air-Conditioned</span>
+                        </div>
+
+                        <div class="flex items-center gap-4 text-slate-600">
+                            <svg class="w-7 h-7 text-[#00B7B5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                            <span class="font-medium">Front & Back Ocean Views</span>
+                        </div>
+
+                        <div class="flex items-center gap-4 text-slate-600">
+                            <svg class="w-7 h-7 text-[#00B7B5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0zM13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"></path></svg>
+                            <span class="font-medium">Accessible by Boat & Car</span>
+                        </div>
+
+                        <div class="flex items-center gap-4 text-slate-600">
+                            <svg class="w-7 h-7 text-[#00B7B5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg>
+                            <span class="font-medium">Fully Furnished & Open Concept</span>
+                        </div>
+
+                        <div class="flex items-center gap-4 text-slate-600">
+                            <svg class="w-7 h-7 text-[#00B7B5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                            <span class="font-medium">Secure & Safe Location</span>
+                        </div>
+
+                        <div class="flex items-center gap-4 text-slate-600">
+                            <svg class="w-7 h-7 text-[#00B7B5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg>
+                            <span class="font-medium">Private Parking Spot</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-1">
+                    <div class="bg-white border border-slate-200 rounded-3xl p-6 shadow-xl sticky top-24">
+                        <div class="mb-4">
+                            <span class="text-2xl font-bold text-[#005461]">Exclusively reserved</span>
+                            <p class="text-sm text-slate-500 mt-1">for Roatan Flats Fishing JJ guests.</p>
+                        </div>
+
+                        <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 mb-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-sm font-bold text-slate-600">Check-in</span>
+                                <span class="text-sm text-slate-400">Flexible</span>
+                            </div>
+                            <div class="flex justify-between items-center pt-2 border-t border-slate-200">
+                                <span class="text-sm font-bold text-slate-600">Capacity</span>
+                                <span class="text-sm text-slate-400">Up to 6 Guests</span>
+                            </div>
+                        </div>
+
+                        <a href="../Contact/index.html" class="block w-full py-4 bg-[#00B7B5] text-white font-bold text-center rounded-xl hover:bg-[#005461] transition-colors text-sm uppercase tracking-widest shadow-lg shadow-[#00B7B5]/30 mb-4">Check Availability</a>
+
+                        <p class="text-center text-xs text-slate-400 font-medium">You won't be charged yet</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const images = [
+                "../Assets/lodge1.jpeg",
+                "../Assets/lodge2.jpeg",
+                "../Assets/lodge3.jpeg",
+                "../Assets/lodge4.jpeg",
+                "../Assets/lodge5.jpeg",
+                "../Assets/lodgein.jpeg",
+                "../Assets/lodgein2.jpeg",
+                "../Assets/lodgein3.jpeg",
+                "../Assets/lodgein4.jpeg"
+            ];
+            let currentIndex = 0;
+            const mainImg = document.getElementById('main-gallery-img');
+
+            function setImg(index) {
+                currentIndex = index;
+                mainImg.style.opacity = 0;
+                setTimeout(() => {
+                    mainImg.src = images[currentIndex];
+                    mainImg.style.opacity = 1;
+                }, 300);
+            }
+
+            function nextImage() {
+                currentIndex = (currentIndex + 1) % images.length;
+                setImg(currentIndex);
+            }
+
+            function prevImage() {
+                currentIndex = (currentIndex - 1 + images.length) % images.length;
+                setImg(currentIndex);
+            }
+        </script>
+    </section>
+
+    <section class="py-16 md:py-24 relative overflow-hidden">
+        <div class="absolute inset-0">
+             <img src="https://casablancafishing.mx/wp-content/uploads/2013/07/speciesbone2_100.jpg" alt="Ocean Background" class="w-full h-full object-cover">
+             <div class="absolute inset-0 bg-slate-900/80"></div>
+        </div>
+
+        <div class="container mx-auto px-4 relative z-10 text-center">
+            <h2 class="text-3xl md:text-6xl font-serif font-bold text-white mb-4 md:mb-8">Ready to Cast Off?</h2>
+            <p class="text-cyan-100 text-base md:text-xl max-w-2xl mx-auto mb-8 md:mb-10">The tides are turning and the fish are waiting. Secure your dates today.</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="../Contact/index.html" class="px-8 py-3 md:py-4 bg-cyan-400 text-slate-900 font-bold rounded-full hover:bg-cyan-300 transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(34,211,238,0.5)]">
+                    Book Your Trip
+                </a>
+                <a href="tel:+50431533851" class="px-8 py-3 md:py-4 bg-transparent border border-white text-white font-bold rounded-full hover:bg-white hover:text-slate-900 transition-all">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<a href="https://wa.me/50431533851" target="_blank" class="fixed bottom-6 right-6 z-50 group">
+    <span
+        class="absolute right-16 top-2 bg-white text-navy px-3 py-1 rounded-lg text-xs font-bold shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+        Chat with Jeovy
+    </span>
+    <div
+        class="w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300 hover:rotate-12">
+        <i class="fa-brands fa-whatsapp text-3xl text-white"></i>
+    </div>
+    <div class="absolute inset-0 bg-[#25D366] rounded-full -z-10 animate-ping opacity-75"></div>
+</a>
+
+<footer class="bg-[#0a192f] text-white pt-20 pb-10 border-t border-white/10 relative overflow-hidden">
+    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-aqua/30 to-transparent">
+    </div>
+
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16">
+
+            <div class="lg:col-span-5">
+                <div class="flex items-center gap-3 mb-6">
+                    <img src="../Assets/OfficialLogo.jpeg" alt="Roatan Flats Fishing JJ Logo" class="h-12 w-auto rounded-full object-contain">
+
+                    <div class="flex flex-col">
+                        <span class="font-serif font-bold text-2xl tracking-tight leading-none">Roatan Flats Fishing JJ</span>
+                        <span class="text-aqua text-[10px] uppercase tracking-[0.3em] mt-1 font-sans font-semibold">Traditional Fly Fishing</span>
+                    </div>
+                </div>
+                <p class="text-slate-400 text-base leading-relaxed max-w-md mb-8">
+                    An authentic angling tradition in the Bay Islands. From the pristine flats of Oak Ridge to the deep blue, we provide an experience rooted in conservation and island heritage.
+                </p>
+                <div class="flex items-center gap-6">
+                    <a href="https://www.instagram.com/roatanflatsfishingjj?igsh=bHJxOTlrcWgyN3Fl" class="text-slate-400 hover:text-aqua transition-colors"><i
+                            class="fa-brands fa-instagram text-xl"></i></a>
+                    <a href="https://www.facebook.com/share/1D4JEzAMfw/" class="text-slate-400 hover:text-aqua transition-colors"><i
+                            class="fa-brands fa-facebook text-xl"></i></a>
+                </div>
+            </div>
+
+            <div class="lg:col-span-3 lg:pl-12">
+                <h4
+                    class="text-white font-semibold mb-6 text-sm uppercase tracking-widest border-b border-aqua/20 pb-2 inline-block">
+                    Navigation</h4>
+                <ul class="space-y-4 text-sm text-slate-400 font-medium">
+                    <li><a href="../index.html" class="hover:text-aqua transition-all flex items-center gap-2 group"><span
+                                class="h-px w-0 bg-aqua group-hover:w-3 transition-all"></span>Home</a>
+                    </li>
+                    <li><a href="../About/index.html" class="hover:text-aqua transition-all flex items-center gap-2 group"><span
+                                class="h-px w-0 bg-aqua group-hover:w-3 transition-all"></span>About Us</a></li>
+                    <li><a href="../Rates/index.html" class="hover:text-aqua transition-all flex items-center gap-2 group"><span
+                                class="h-px w-0 bg-aqua group-hover:w-3 transition-all"></span>Trip Rates</a></li>
+                    <li><a href="../Moments/index.html" class="hover:text-aqua transition-all flex items-center gap-2 group"><span
+                                class="h-px w-0 bg-aqua group-hover:w-3 transition-all"></span>Moments</a></li>
+                </ul>
+            </div>
+
+            <div class="lg:col-span-4 bg-white/5 p-8 rounded-2xl border border-white/10 backdrop-blur-sm">
+                <h4 class="text-white font-semibold mb-2">Ready to hit the flats?</h4>
+                <p class="text-slate-400 text-sm mb-6">Contact us directly for availability and custom trip planning.</p>
+
+                <div class="space-y-3">
+                    <a href="https://wa.me/50431533851"
+                        class="flex items-center justify-center gap-2 w-full bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold py-3 rounded-lg text-sm transition-all shadow-lg shadow-green-900/20">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        Message on WhatsApp
+                    </a>
+
+                    <a href="mailto:joevy@roatanflatfishing.com"
+                        class="flex items-center justify-center gap-2 w-full bg-transparent border border-white/20 hover:border-aqua hover:text-aqua text-white font-bold py-3 rounded-lg text-sm transition-all">
+                        <i class="fa-solid fa-envelope"></i>
+                        Send an Email
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent mb-8"></div>
+
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+            <div
+                class="flex flex-wrap justify-center md:justify-start gap-x-8 gap-y-2 text-[11px] uppercase tracking-[0.2em] text-slate-500 font-bold">
+                <span>&copy; 2026 Roatan Flats Fishing JJ</span>
+                <span class="text-slate-700">|</span>
+                <span class="flex items-center gap-1"><i class="fa-solid fa-location-dot text-aqua/50"></i> Oak Ridge, Roatan</span>
+            </div>
+
+            <div class="flex items-center gap-4 text-slate-500">
+                <span class="text-[10px] uppercase tracking-tighter italic"></span>
+                <i class="fa-solid fa-anchor text-slate-700"></i>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

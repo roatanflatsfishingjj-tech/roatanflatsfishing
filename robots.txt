@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://roatanflatfishingjj.com/sitemap.xml
+Sitemap: https://www.roatanflatfishing.com/sitemap.xml

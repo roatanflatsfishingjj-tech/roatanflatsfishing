@@ -1,18 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://roatanflatfishingjj.com/</loc>
+    <loc>https://www.roatanflatfishing.com/</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.roatanflatfishing.com/Assets/bg26.jpeg</image:loc>
+      <image:title>Roatan Flats Fishing guide and guest</image:title>
+      <image:caption>Private Roatan fishing charters and fly fishing trips with local Oak Ridge guides.</image:caption>
+    </image:image>
   </url>
   <url>
-    <loc>https://roatanflatfishingjj.com/About/</loc>
+    <loc>https://www.roatanflatfishing.com/About/</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.roatanflatfishing.com/Assets/joevy1.jpeg</image:loc>
+      <image:title>Local Roatan fishing guide</image:title>
+      <image:caption>Local Oak Ridge fishing guide for Roatan flats, mangroves, permit, bonefish, and tarpon.</image:caption>
+    </image:image>
   </url>
   <url>
-    <loc>https://roatanflatfishingjj.com/Contact/</loc>
+    <loc>https://www.roatanflatfishing.com/Contact/</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.roatanflatfishing.com/Assets/bgweb.jpg</image:loc>
+      <image:title>Roatan flats and mangrove coastline</image:title>
+      <image:caption>Contact Roatan Flats Fishing JJ to book a private fishing charter or cruise port trip.</image:caption>
+    </image:image>
   </url>
   <url>
-    <loc>https://roatanflatfishingjj.com/Moments/</loc>
+    <loc>https://www.roatanflatfishing.com/Moments/</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.roatanflatfishing.com/Assets/img10.jpeg</image:loc>
+      <image:title>Roatan permit fishing photo</image:title>
+      <image:caption>Permit, bonefish, tarpon, lodge, and flats fishing photos from Roatan Flats Fishing JJ.</image:caption>
+    </image:image>
   </url>
   <url>
-    <loc>https://roatanflatfishingjj.com/Rates/</loc>
+    <loc>https://www.roatanflatfishing.com/Rates/</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.roatanflatfishing.com/Assets/lodge4.jpeg</image:loc>
+      <image:title>Roatan fishing lodge package</image:title>
+      <image:caption>Private Roatan fishing charter rates, cruise port trips, and lodge-based packages.</image:caption>
+    </image:image>
   </url>
 </urlset>

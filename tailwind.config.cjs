@@ -3,6 +3,7 @@ module.exports = {
     "./*.html",
     "./About/**/*.html",
     "./Contact/**/*.html",
+    "./Cruise/**/*.html",
     "./Moments/**/*.html",
     "./Rates/**/*.html"
   ],
